@@ -31,6 +31,7 @@ modules:
   - name: clutch.module.dynamodb
   - name: clutch.module.healthcheck
   - name: clutch.module.resolver
+  - name: gateway.module.amiibo
   - name: clutch.module.aws
   - name: clutch.module.envoytriage
   - name: clutch.module.k8s
@@ -41,6 +42,7 @@ modules:
       project_service_override: clutch.service.project
 services:
   - name: clutch.service.project
+  - name: gateway.service.amiibo
   - name: clutch.service.aws
     typed_config:
       "@type": types.google.com/clutch.config.service.aws.v1.Config
